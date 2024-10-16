@@ -2770,12 +2770,15 @@ progress {
 }
 
 .form-control:focus {
-  color: #495057;
-  background-color: #fff;
-  border-color: #e293d3;
-  outline: 0;
-  box-shadow: 0 0 0 2px #e9aede;
+  color: #495057; /* Text color */
+  background-color: #fff; /* Background color */
+  border-color: transparent; /* Remove border color */
+  outline: 0; /* No outline */
+  box-shadow: 0 0 0 2px rgba(97, 168, 255, 0.5), /* First gradient color */
+              0 0 0 2px rgba(163, 122, 255, 0.5), /* Second gradient color */
+              0 0 0 2px rgba(255, 128, 168, 0.5); /* Third gradient color */
 }
+
 
 .form-control::-webkit-date-and-time-value {
   height: 1.4rem;
